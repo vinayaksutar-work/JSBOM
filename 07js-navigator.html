@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+<title>JS Navigator</title>
+</head>
+<body>
+    <div class="container my-5">
+        <h2 class="my-3 ">JS Navigator</h2>
+        <h5>The cookieEnabled property returns true if cookies are enabled:</h5>
+        <p id="demo1" class="mb-3 "></p>
+        <h5>The appCodeName property returns the code name of the browser.</h5>
+        <p id="demo2" class="mb-3 "></p>
+        <h5>The product property returns the product name of the browser.</h5>
+        <p id="demo3" class="mb-3 "></p>
+        <h5>The appVersion property returns version information about the browser:</h5>
+        <p id="demo4" class="mb-3 "></p>
+        <h5>The userAgent property returns the user-agent header sent by the browser to the server:</h5>
+        <p id="demo5" class="mb-3 "></p>
+        <h5>The platform property returns the browser platform (operating system):</h5>
+        <p id="demo6" class="mb-3 "></p>
+        <h5>The language property returns the browser's language:</h5>
+        <p id="demo7" class="mb-3 "></p>
+        <h5>The onLine property returns true if the browser is online:</h5>
+        <p id="demo8" class="mb-3 "></p>
+        <h5>The javaEnabled() method returns true if Java is enabled:</h5>  
+        <p id="demo9" class="mb-3 "></p>
+    </div>
+<script>
+    document.getElementById("demo1").innerHTML ="navigator.cookieEnabled is : " 
+    + navigator.cookieEnabled;
+
+    document.getElementById("demo2").innerHTML = "navigator.appCodeName is : " 
+    + navigator.appCodeName;
+
+    document.getElementById("demo3").innerHTML ="navigator.product is : " 
+    + navigator.product;
+
+    document.getElementById("demo4").innerHTML = navigator.appVersion;
+
+    document.getElementById("demo5").innerHTML = navigator.userAgent;
+
+    document.getElementById("demo6").innerHTML = "navigator.platform is " 
+    + navigator.platform;
+
+    document.getElementById("demo7").innerHTML ="navigator.language is " 
+    + navigator.language;
+
+    document.getElementById("demo8").innerHTML ="navigator.onLine is " 
+    + navigator.onLine;
+
+    document.getElementById("demo9").innerHTML ="javaEnabled is " 
+    + navigator.javaEnabled();
+</script>
+</body>
+</html>
