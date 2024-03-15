@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+<title>JS Popup Alert</title>
+</head>
+<body>
+    <div class="container my-5">
+        <h2>JS Popup Alert</h2>
+        <h4>Alert Box</h4>
+        <button class="btn btn-primary " onclick="alertFunction()">Alert</button>
+        <h4>Confirm Box</h4>
+        <p id="demo1"></p>
+        <button class="btn btn-warning " onclick="confirmFunction()">Confirm</button>
+        <h4>Prompt Box</h4>
+        <p id="demo2"></p>
+        <button class="btn btn-warning " onclick="promptFunction()">Prompt</button>
+    </div>
+<script>
+    function alertFunction(){
+        alert("I am an Alert Box!");
+    }
+    function confirmFunction(){
+        var txt;
+        if(confirm("Press a button"))
+        {
+            txt = "You Pressed Ok!";
+        }
+        else{
+            txt = "You Pressed Cancel!";
+        }
+        document.getElementById("demo1").innerHTML = txt;
+    }
+    function promptFunction(){
+        let text;
+        let person = prompt("Please enter your name:", "Harry Potter");
+        if (person == null || person == "") {
+            text = "User cancelled the prompt.";
+        } else {
+            text = "Hello " + person + "! How are you today?";
+        }
+        document.getElementById("demo2").innerHTML = text;
+    }
+</script>
+</body>
+</html>
