@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+<link rel="stylesheet" href="style.css">
+<title>JS Timing</title>
+</head>
+<body>
+    <div class="container my-5">
+        <h2>JavaScript Timing</h2>
+        <h4>1.setTimeout & clearTimeout</h4>
+        <p>Click "setTimeout". Wait 3 seconds, and the page will alert "Hello".</p>
+        <button onclick="myVar = setTimeout(myFunction, 3000);" class="btn btn-primary ">setTimeout</button>
+        <button onclick="clearTimeout(myVar)" class="btn btn-primary">clearTimeout</button>
+        <h4>2.setInterval</h4>
+        <p>A script on this page starts this clock:</p>
+        <p id="demo"></p>
+    </div>
+<script>
+    function myFunction(){
+        alert("Hello");
+    }
+
+    setInterval(myTimer, 1000);
+    function myTimer() {
+    const d = new Date();
+    document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+    }
+</script>
+</body>
+</html>
